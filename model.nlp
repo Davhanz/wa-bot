@@ -1,0 +1,1632 @@
+{
+  "settings": {
+    "languages": [
+      "id"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "id"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "halo": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "hai": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "assalamualaikum": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "pagi,selamat": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "selamat,siang": {
+            "intent": "sapaan.halo",
+            "domain": "default"
+          },
+          "ima,kasih": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makasih,ya": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thanks": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "bantu": {
+            "intent": "menu.help",
+            "domain": "default"
+          },
+          "help": {
+            "intent": "menu.help",
+            "domain": "default"
+          },
+          "menu": {
+            "intent": "menu.help",
+            "domain": "default"
+          },
+          "apa,fitur,saja": {
+            "intent": "menu.help",
+            "domain": "default"
+          },
+          "bantu,tolong": {
+            "intent": "menu.help",
+            "domain": "default"
+          },
+          "jadwal": {
+            "intent": "menu.jadwal",
+            "domain": "default"
+          },
+          "jadwal,posyandu": {
+            "intent": "menu.jadwal",
+            "domain": "default"
+          },
+          "jadwal,kapan": {
+            "intent": "menu.jadwal",
+            "domain": "default"
+          },
+          "kapan,posyandu": {
+            "intent": "menu.jadwal",
+            "domain": "default"
+          },
+          "ikut,kapan,posyandu": {
+            "intent": "menu.jadwal",
+            "domain": "default"
+          },
+          "anak": {
+            "intent": "menu.anak",
+            "domain": "default"
+          },
+          "anak,daftar": {
+            "intent": "menu.anak",
+            "domain": "default"
+          },
+          "anak,lihat": {
+            "intent": "menu.anak",
+            "domain": "default"
+          },
+          "anak,list": {
+            "intent": "menu.anak",
+            "domain": "default"
+          },
+          "ok": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "oke": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "baik": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "sip": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "mantap": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makasih": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makasi": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "trimakasih": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "trims": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "suwun": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "hatur,nuhun": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "matur,nuwun": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "nuhun": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thx": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "tq": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "tx": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "ty": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "tysm": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makacih": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makacie": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "makachi": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "mksh": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thank,u": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thankyou": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "tanks": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "thankx": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "cheers": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "siap": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "noted": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "okey": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "yes": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "ya": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "yoi": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          },
+          "gas": {
+            "intent": "ucapan.terimakasih",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "sapaan.halo": "default",
+          "ucapan.terimakasih": "default",
+          "menu.help": "default",
+          "menu.jadwal": "default",
+          "menu.anak": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "halo",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hai",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "assalamualaikum",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat pagi",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat siang",
+            "intent": "sapaan.halo"
+          },
+          {
+            "domain": "default",
+            "utterance": "terima kasih",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasih ya",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "bantuan",
+            "intent": "menu.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "help",
+            "intent": "menu.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "menu",
+            "intent": "menu.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja fiturnya",
+            "intent": "menu.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "tolong bantu",
+            "intent": "menu.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "jadwal",
+            "intent": "menu.jadwal"
+          },
+          {
+            "domain": "default",
+            "utterance": "jadwal posyandu",
+            "intent": "menu.jadwal"
+          },
+          {
+            "domain": "default",
+            "utterance": "kapan jadwalnya",
+            "intent": "menu.jadwal"
+          },
+          {
+            "domain": "default",
+            "utterance": "kapan posyandu",
+            "intent": "menu.jadwal"
+          },
+          {
+            "domain": "default",
+            "utterance": "kapan posyandu berikutnya",
+            "intent": "menu.jadwal"
+          },
+          {
+            "domain": "default",
+            "utterance": "anak",
+            "intent": "menu.anak"
+          },
+          {
+            "domain": "default",
+            "utterance": "daftar anak",
+            "intent": "menu.anak"
+          },
+          {
+            "domain": "default",
+            "utterance": "lihat anak",
+            "intent": "menu.anak"
+          },
+          {
+            "domain": "default",
+            "utterance": "list anak",
+            "intent": "menu.anak"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "oke",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "baik",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "sip",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "mantap",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "terima kasih",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasih",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasi",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasii",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "trimakasih",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "trims",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "suwun",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "hatur nuhun",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "matur nuwun",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "nuhun",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thx",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "tq",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "tx",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "ty",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "tysm",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makacih",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makacie",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makachii",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "mksh",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thanks",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank you",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thank u",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thankyou",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "tanks",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "thankx",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "cheers",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "siap",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "noted",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "okey",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "yes",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "ya",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "yoi",
+            "intent": "ucapan.terimakasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "gas",
+            "intent": "ucapan.terimakasih"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "halo": 1,
+              "hai": 1,
+              "hello": 1,
+              "assalamualaikum": 1,
+              "selamat": 1,
+              "pagi": 1,
+              "siang": 1,
+              "ima": 1,
+              "kasih": 1,
+              "makasih": 1,
+              "ya": 1,
+              "thank": 1,
+              "you": 1,
+              "thanks": 1,
+              "bantu": 1,
+              "help": 1,
+              "menu": 1,
+              "apa": 1,
+              "saja": 1,
+              "fitur": 1,
+              "tolong": 1,
+              "jadwal": 1,
+              "posyandu": 1,
+              "kapan": 1,
+              "ikut": 1,
+              "anak": 1,
+              "daftar": 1,
+              "lihat": 1,
+              "list": 1,
+              "ok": 1,
+              "oke": 1,
+              "baik": 1,
+              "sip": 1,
+              "mantap": 1,
+              "makasi": 1,
+              "trimakasih": 1,
+              "trims": 1,
+              "suwun": 1,
+              "hatur": 1,
+              "nuhun": 1,
+              "matur": 1,
+              "nuwun": 1,
+              "thx": 1,
+              "tq": 1,
+              "tx": 1,
+              "ty": 1,
+              "tysm": 1,
+              "makacih": 1,
+              "makacie": 1,
+              "makachi": 1,
+              "mksh": 1,
+              "u": 1,
+              "thankyou": 1,
+              "tanks": 1,
+              "thankx": 1,
+              "cheers": 1,
+              "siap": 1,
+              "noted": 1,
+              "okey": 1,
+              "yes": 1,
+              "yoi": 1,
+              "gas": 1
+            },
+            "intents": {
+              "sapaan.halo": 1,
+              "ucapan.terimakasih": 1,
+              "menu.help": 1,
+              "menu.jadwal": 1,
+              "menu.anak": 1
+            },
+            "intentFeatures": {
+              "sapaan.halo": {
+                "halo": 1,
+                "hai": 1,
+                "hello": 1,
+                "assalamualaikum": 1,
+                "selamat": 1,
+                "pagi": 1,
+                "siang": 1
+              },
+              "ucapan.terimakasih": {
+                "ima": 1,
+                "kasih": 1,
+                "makasih": 1,
+                "ya": 1,
+                "thank": 1,
+                "you": 1,
+                "thanks": 1,
+                "ok": 1,
+                "oke": 1,
+                "baik": 1,
+                "sip": 1,
+                "mantap": 1,
+                "makasi": 1,
+                "trimakasih": 1,
+                "trims": 1,
+                "suwun": 1,
+                "hatur": 1,
+                "nuhun": 1,
+                "matur": 1,
+                "nuwun": 1,
+                "thx": 1,
+                "tq": 1,
+                "tx": 1,
+                "ty": 1,
+                "tysm": 1,
+                "makacih": 1,
+                "makacie": 1,
+                "makachi": 1,
+                "mksh": 1,
+                "u": 1,
+                "thankyou": 1,
+                "tanks": 1,
+                "thankx": 1,
+                "cheers": 1,
+                "siap": 1,
+                "noted": 1,
+                "okey": 1,
+                "yes": 1,
+                "yoi": 1,
+                "gas": 1
+              },
+              "menu.help": {
+                "bantu": 1,
+                "help": 1,
+                "menu": 1,
+                "apa": 1,
+                "saja": 1,
+                "fitur": 1,
+                "tolong": 1
+              },
+              "menu.jadwal": {
+                "jadwal": 1,
+                "posyandu": 1,
+                "kapan": 1,
+                "ikut": 1
+              },
+              "menu.anak": {
+                "anak": 1,
+                "daftar": 1,
+                "lihat": 1,
+                "list": 1
+              }
+            },
+            "featuresToIntent": {
+              "halo": [
+                "sapaan.halo"
+              ],
+              "hai": [
+                "sapaan.halo"
+              ],
+              "hello": [
+                "sapaan.halo"
+              ],
+              "assalamualaikum": [
+                "sapaan.halo"
+              ],
+              "selamat": [
+                "sapaan.halo"
+              ],
+              "pagi": [
+                "sapaan.halo"
+              ],
+              "siang": [
+                "sapaan.halo"
+              ],
+              "ima": [
+                "ucapan.terimakasih"
+              ],
+              "kasih": [
+                "ucapan.terimakasih"
+              ],
+              "makasih": [
+                "ucapan.terimakasih"
+              ],
+              "ya": [
+                "ucapan.terimakasih"
+              ],
+              "thank": [
+                "ucapan.terimakasih"
+              ],
+              "you": [
+                "ucapan.terimakasih"
+              ],
+              "thanks": [
+                "ucapan.terimakasih"
+              ],
+              "ok": [
+                "ucapan.terimakasih"
+              ],
+              "oke": [
+                "ucapan.terimakasih"
+              ],
+              "baik": [
+                "ucapan.terimakasih"
+              ],
+              "sip": [
+                "ucapan.terimakasih"
+              ],
+              "mantap": [
+                "ucapan.terimakasih"
+              ],
+              "makasi": [
+                "ucapan.terimakasih"
+              ],
+              "trimakasih": [
+                "ucapan.terimakasih"
+              ],
+              "trims": [
+                "ucapan.terimakasih"
+              ],
+              "suwun": [
+                "ucapan.terimakasih"
+              ],
+              "hatur": [
+                "ucapan.terimakasih"
+              ],
+              "nuhun": [
+                "ucapan.terimakasih"
+              ],
+              "matur": [
+                "ucapan.terimakasih"
+              ],
+              "nuwun": [
+                "ucapan.terimakasih"
+              ],
+              "thx": [
+                "ucapan.terimakasih"
+              ],
+              "tq": [
+                "ucapan.terimakasih"
+              ],
+              "tx": [
+                "ucapan.terimakasih"
+              ],
+              "ty": [
+                "ucapan.terimakasih"
+              ],
+              "tysm": [
+                "ucapan.terimakasih"
+              ],
+              "makacih": [
+                "ucapan.terimakasih"
+              ],
+              "makacie": [
+                "ucapan.terimakasih"
+              ],
+              "makachi": [
+                "ucapan.terimakasih"
+              ],
+              "mksh": [
+                "ucapan.terimakasih"
+              ],
+              "u": [
+                "ucapan.terimakasih"
+              ],
+              "thankyou": [
+                "ucapan.terimakasih"
+              ],
+              "tanks": [
+                "ucapan.terimakasih"
+              ],
+              "thankx": [
+                "ucapan.terimakasih"
+              ],
+              "cheers": [
+                "ucapan.terimakasih"
+              ],
+              "siap": [
+                "ucapan.terimakasih"
+              ],
+              "noted": [
+                "ucapan.terimakasih"
+              ],
+              "okey": [
+                "ucapan.terimakasih"
+              ],
+              "yes": [
+                "ucapan.terimakasih"
+              ],
+              "yoi": [
+                "ucapan.terimakasih"
+              ],
+              "gas": [
+                "ucapan.terimakasih"
+              ],
+              "bantu": [
+                "menu.help"
+              ],
+              "help": [
+                "menu.help"
+              ],
+              "menu": [
+                "menu.help"
+              ],
+              "apa": [
+                "menu.help"
+              ],
+              "saja": [
+                "menu.help"
+              ],
+              "fitur": [
+                "menu.help"
+              ],
+              "tolong": [
+                "menu.help"
+              ],
+              "jadwal": [
+                "menu.jadwal"
+              ],
+              "posyandu": [
+                "menu.jadwal"
+              ],
+              "kapan": [
+                "menu.jadwal"
+              ],
+              "ikut": [
+                "menu.jadwal"
+              ],
+              "anak": [
+                "menu.anak"
+              ],
+              "daftar": [
+                "menu.anak"
+              ],
+              "lihat": [
+                "menu.anak"
+              ],
+              "list": [
+                "menu.anak"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "halo",
+                "hai",
+                "hello",
+                "assalamualaikum",
+                "selamat",
+                "pagi",
+                "siang",
+                "ima",
+                "kasih",
+                "makasih",
+                "ya",
+                "thank",
+                "you",
+                "thanks",
+                "bantu",
+                "help",
+                "menu",
+                "apa",
+                "saja",
+                "fitur",
+                "tolong",
+                "jadwal",
+                "posyandu",
+                "kapan",
+                "ikut",
+                "anak",
+                "daftar",
+                "lihat",
+                "list",
+                "ok",
+                "oke",
+                "baik",
+                "sip",
+                "mantap",
+                "makasi",
+                "trimakasih",
+                "trims",
+                "suwun",
+                "hatur",
+                "nuhun",
+                "matur",
+                "nuwun",
+                "thx",
+                "tq",
+                "tx",
+                "ty",
+                "tysm",
+                "makacih",
+                "makacie",
+                "makachi",
+                "mksh",
+                "u",
+                "thankyou",
+                "tanks",
+                "thankx",
+                "cheers",
+                "siap",
+                "noted",
+                "okey",
+                "yes",
+                "yoi",
+                "gas"
+              ],
+              "intents": [
+                "sapaan.halo",
+                "ucapan.terimakasih",
+                "menu.help",
+                "menu.jadwal",
+                "menu.anak"
+              ],
+              "perceptrons": [
+                [
+                  12.891962051391602,
+                  12.889209747314453,
+                  12.88459587097168,
+                  12.879419326782227,
+                  8.598418235778809,
+                  4.299906253814697,
+                  4.298486709594727,
+                  -1.0568714141845703,
+                  -1.0568714141845703,
+                  -1.5342868566513062,
+                  -1.3804103136062622,
+                  -1.195124626159668,
+                  -0.9642540216445923,
+                  -1.6133991479873657,
+                  -1.7263033390045166,
+                  -1.5732080936431885,
+                  -1.5542055368423462,
+                  -0.680099606513977,
+                  -0.680099606513977,
+                  -0.680099606513977,
+                  -0.5560903549194336,
+                  -1.6445434093475342,
+                  -1.004172921180725,
+                  -0.9642308354377747,
+                  -0.23341253399848938,
+                  -1.7623578310012817,
+                  -0.37926581501960754,
+                  -0.3526655435562134,
+                  -0.31536921858787537,
+                  -1.497835636138916,
+                  -1.4852581024169922,
+                  -1.4723436832427979,
+                  -1.4605116844177246,
+                  -1.450690507888794,
+                  -1.55622398853302,
+                  -1.4320467710494995,
+                  -1.4245796203613281,
+                  -1.4179190397262573,
+                  -0.48321589827537537,
+                  -1.4294193983078003,
+                  -0.7547752857208252,
+                  -0.7547752857208252,
+                  -1.4066921472549438,
+                  -1.4021934270858765,
+                  -1.3985859155654907,
+                  -1.3955543041229248,
+                  -1.3930755853652954,
+                  -1.391173005104065,
+                  -1.3896929025650024,
+                  -1.3886187076568604,
+                  -1.3878535032272339,
+                  -0.20440253615379333,
+                  -1.3871649503707886,
+                  -1.3864352703094482,
+                  -1.3856227397918701,
+                  -1.3847250938415527,
+                  -1.3837404251098633,
+                  -1.382667064666748,
+                  -1.3815029859542847,
+                  -1.380246639251709,
+                  -1.3779120445251465,
+                  -1.3764170408248901,
+                  1.3855399583894668
+                ],
+                [
+                  -10.557243347167969,
+                  -10.554056167602539,
+                  -10.55044174194336,
+                  -10.54637622833252,
+                  -7.085297584533691,
+                  -3.590991258621216,
+                  -3.4856510162353516,
+                  1.8771653175354004,
+                  1.8771653175354004,
+                  2.5384786128997803,
+                  2.4842774868011475,
+                  2.507558822631836,
+                  1.2529412508010864,
+                  3.7708802223205566,
+                  -10.490885734558105,
+                  -10.482697486877441,
+                  -10.477169036865234,
+                  -3.5026121139526367,
+                  -3.5026121139526367,
+                  -3.5026121139526367,
+                  -2.494872570037842,
+                  -10.474287986755371,
+                  -5.324688911437988,
+                  -5.176112174987793,
+                  -1.037424921989441,
+                  -10.472280502319336,
+                  -1.7536399364471436,
+                  -1.6148898601531982,
+                  -1.5079841613769531,
+                  3.809265613555908,
+                  3.811157703399658,
+                  3.812995433807373,
+                  3.8147714138031006,
+                  3.816477060317993,
+                  3.7464067935943604,
+                  3.768477201461792,
+                  3.769958972930908,
+                  3.7713382244110107,
+                  0.11269460618495941,
+                  3.6798043251037598,
+                  1.8772555589675903,
+                  1.8772555589675903,
+                  3.7726974487304688,
+                  3.773739814758301,
+                  3.774646759033203,
+                  3.7754127979278564,
+                  3.776029348373413,
+                  3.7764899730682373,
+                  3.776787281036377,
+                  3.77691388130188,
+                  3.7768640518188477,
+                  1.2553553581237793,
+                  3.777467966079712,
+                  3.7769317626953125,
+                  3.776196241378784,
+                  3.775254726409912,
+                  3.774101495742798,
+                  3.772731304168701,
+                  3.7711384296417236,
+                  3.7693183422088623,
+                  3.713601589202881,
+                  3.7112038135528564,
+                  10.578149022669123
+                ],
+                [
+                  -0.9614607095718384,
+                  -0.960241436958313,
+                  -0.9589589238166809,
+                  -0.9576118588447571,
+                  -0.6454487442970276,
+                  -0.3229963481426239,
+                  -0.3222549259662628,
+                  -0.6297076940536499,
+                  -0.6297076940536499,
+                  -1.0217167139053345,
+                  -0.96551114320755,
+                  -0.650589644908905,
+                  -0.3267055153846741,
+                  -0.9720930457115173,
+                  12.98274040222168,
+                  13.289512634277344,
+                  13.284576416015625,
+                  4.433596134185791,
+                  4.433596134185791,
+                  4.433596134185791,
+                  0.5069612264633179,
+                  -1.4405208826065063,
+                  -1.0141711235046387,
+                  -0.9696561098098755,
+                  -0.2374829202890396,
+                  -1.641664743423462,
+                  -0.374455988407135,
+                  -0.33265841007232666,
+                  -0.29427585005760193,
+                  -1.0997918844223022,
+                  -1.0825225114822388,
+                  -1.0665420293807983,
+                  -1.0518814325332642,
+                  -1.0385050773620605,
+                  -1.1770249605178833,
+                  -1.0037201642990112,
+                  -0.9951871037483215,
+                  -0.98833829164505,
+                  -0.39939364790916443,
+                  -1.018720269203186,
+                  -0.5585834383964539,
+                  -0.5585834383964539,
+                  -0.9773772358894348,
+                  -0.9748509526252747,
+                  -0.9743202328681946,
+                  -0.9740844368934631,
+                  -0.9738155007362366,
+                  -0.9735115766525269,
+                  -0.973170816898346,
+                  -0.9727916121482849,
+                  -0.9723721742630005,
+                  -0.32370102405548096,
+                  -0.9713475108146667,
+                  -0.9707899689674377,
+                  -0.9701850414276123,
+                  -0.969531238079071,
+                  -0.9688272476196289,
+                  -0.968071699142456,
+                  -0.9672631025314331,
+                  -0.9664002656936646,
+                  -0.9645167589187622,
+                  -0.963485062122345,
+                  0.9723868450810151
+                ],
+                [
+                  -0.491715669631958,
+                  -0.48968473076820374,
+                  -0.4876425564289093,
+                  -0.48558878898620605,
+                  -0.34402522444725037,
+                  -0.17237259447574615,
+                  -0.17041513323783875,
+                  -0.297887921333313,
+                  -0.297887921333313,
+                  -0.5473045110702515,
+                  -0.5015364289283752,
+                  -0.36605772376060486,
+                  -0.1835380643606186,
+                  -0.5245184302330017,
+                  -0.4820755422115326,
+                  -0.47992101311683655,
+                  -0.4778282642364502,
+                  -0.16968132555484772,
+                  -0.16968132555484772,
+                  -0.16968132555484772,
+                  -0.0615343302488327,
+                  9.661447525024414,
+                  5.88762092590332,
+                  5.99240779876709,
+                  1.8388025760650635,
+                  -1.0344637632369995,
+                  -0.2208653837442398,
+                  -0.19525565207004547,
+                  -0.17135101556777954,
+                  -0.5572226047515869,
+                  -0.5551428198814392,
+                  -0.5531348586082458,
+                  -0.5511730313301086,
+                  -0.5492408275604248,
+                  -0.5705545544624329,
+                  -0.5446356534957886,
+                  -0.5427799224853516,
+                  -0.5409281849861145,
+                  -0.1875428408384323,
+                  -0.5396289825439453,
+                  -0.28121986985206604,
+                  -0.28121986985206604,
+                  -0.5367698669433594,
+                  -0.5349248647689819,
+                  -0.533074140548706,
+                  -0.5312175154685974,
+                  -0.5293549299240112,
+                  -0.527485728263855,
+                  -0.5256100296974182,
+                  -0.5237271785736084,
+                  -0.521837055683136,
+                  -0.18132604658603668,
+                  -0.5170575976371765,
+                  -0.5151451230049133,
+                  -0.5132243037223816,
+                  -0.5112946033477783,
+                  -0.5093560814857483,
+                  -0.5074083209037781,
+                  -0.5054510235786438,
+                  -0.5034841299057007,
+                  -0.49952954053878784,
+                  -0.49753323197364807,
+                  0.5396107734996717
+                ],
+                [
+                  -0.24404284358024597,
+                  -0.24366533756256104,
+                  -0.2432791292667389,
+                  -0.24288393557071686,
+                  -0.16512446105480194,
+                  -0.08276249468326569,
+                  -0.0822068303823471,
+                  -0.2877601683139801,
+                  -0.2877601683139801,
+                  -0.36027979850769043,
+                  -0.24566157162189484,
+                  -0.2528754770755768,
+                  -0.13246263563632965,
+                  -0.2507559359073639,
+                  -0.2423744946718216,
+                  -0.24188727140426636,
+                  -0.24146156013011932,
+                  -0.0822092741727829,
+                  -0.0822092741727829,
+                  -0.0822092741727829,
+                  -0.054487209767103195,
+                  -0.2410164475440979,
+                  -0.12449603527784348,
+                  -0.12053804844617844,
+                  -0.02272207848727703,
+                  13.303873062133789,
+                  0.8714481592178345,
+                  0.8750354051589966,
+                  0.8908587694168091,
+                  -0.41431713104248047,
+                  -0.39996886253356934,
+                  -0.3861038088798523,
+                  -0.3727063238620758,
+                  -0.3597613275051117,
+                  -0.5216253995895386,
+                  -0.3238780200481415,
+                  -0.3132634460926056,
+                  -0.3029807209968567,
+                  -0.18092729151248932,
+                  -0.4131486713886261,
+                  -0.21845297515392303,
+                  -0.21845297515392303,
+                  -0.2817606031894684,
+                  -0.273050993680954,
+                  -0.26459118723869324,
+                  -0.26172852516174316,
+                  -0.25418075919151306,
+                  -0.25319600105285645,
+                  -0.2502013146877289,
+                  -0.24925725162029266,
+                  -0.24873478710651398,
+                  -0.10720953345298767,
+                  -0.24816833436489105,
+                  -0.24785873293876648,
+                  -0.2475552260875702,
+                  -0.24725115299224854,
+                  -0.24694088101387024,
+                  -0.2466242015361786,
+                  -0.2463008016347885,
+                  -0.24597051739692688,
+                  -0.24529720842838287,
+                  -0.24494560062885284,
+                  0.25071400953200446
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "id",
+        "halo"
+      ],
+      [
+        "id",
+        "hai"
+      ],
+      [
+        "id",
+        "hello"
+      ],
+      [
+        "id",
+        "assalamualaikum"
+      ],
+      [
+        "id",
+        "selamat pagi"
+      ],
+      [
+        "id",
+        "selamat siang"
+      ],
+      [
+        "id",
+        "terima kasih"
+      ],
+      [
+        "id",
+        "makasih ya"
+      ],
+      [
+        "id",
+        "thank you"
+      ],
+      [
+        "id",
+        "thanks"
+      ],
+      [
+        "id",
+        "bantuan"
+      ],
+      [
+        "id",
+        "help"
+      ],
+      [
+        "id",
+        "menu"
+      ],
+      [
+        "id",
+        "apa saja fiturnya"
+      ],
+      [
+        "id",
+        "tolong bantu"
+      ],
+      [
+        "id",
+        "jadwal"
+      ],
+      [
+        "id",
+        "jadwal posyandu"
+      ],
+      [
+        "id",
+        "kapan jadwalnya"
+      ],
+      [
+        "id",
+        "kapan posyandu"
+      ],
+      [
+        "id",
+        "kapan posyandu berikutnya"
+      ],
+      [
+        "id",
+        "anak"
+      ],
+      [
+        "id",
+        "daftar anak"
+      ],
+      [
+        "id",
+        "lihat anak"
+      ],
+      [
+        "id",
+        "list anak"
+      ],
+      [
+        "id",
+        "ok"
+      ],
+      [
+        "id",
+        "oke"
+      ],
+      [
+        "id",
+        "baik"
+      ],
+      [
+        "id",
+        "sip"
+      ],
+      [
+        "id",
+        "mantap"
+      ],
+      [
+        "id",
+        "terima kasih"
+      ],
+      [
+        "id",
+        "makasih"
+      ],
+      [
+        "id",
+        "makasi"
+      ],
+      [
+        "id",
+        "makasii"
+      ],
+      [
+        "id",
+        "trimakasih"
+      ],
+      [
+        "id",
+        "trims"
+      ],
+      [
+        "id",
+        "suwun"
+      ],
+      [
+        "id",
+        "hatur nuhun"
+      ],
+      [
+        "id",
+        "matur nuwun"
+      ],
+      [
+        "id",
+        "nuhun"
+      ],
+      [
+        "id",
+        "thx"
+      ],
+      [
+        "id",
+        "tq"
+      ],
+      [
+        "id",
+        "tx"
+      ],
+      [
+        "id",
+        "ty"
+      ],
+      [
+        "id",
+        "tysm"
+      ],
+      [
+        "id",
+        "makacih"
+      ],
+      [
+        "id",
+        "makacie"
+      ],
+      [
+        "id",
+        "makachii"
+      ],
+      [
+        "id",
+        "mksh"
+      ],
+      [
+        "id",
+        "thanks"
+      ],
+      [
+        "id",
+        "thank you"
+      ],
+      [
+        "id",
+        "thank u"
+      ],
+      [
+        "id",
+        "thankyou"
+      ],
+      [
+        "id",
+        "tanks"
+      ],
+      [
+        "id",
+        "thankx"
+      ],
+      [
+        "id",
+        "cheers"
+      ],
+      [
+        "id",
+        "siap"
+      ],
+      [
+        "id",
+        "noted"
+      ],
+      [
+        "id",
+        "okey"
+      ],
+      [
+        "id",
+        "yes"
+      ],
+      [
+        "id",
+        "ya"
+      ],
+      [
+        "id",
+        "yoi"
+      ],
+      [
+        "id",
+        "gas"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "id": {
+        "None": [
+          {
+            "answer": "Maaf saya belum paham maksudnya."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
